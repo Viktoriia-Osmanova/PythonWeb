@@ -3,6 +3,7 @@ import asyncio
 import argparse
 from datetime import datetime, timedelta
 
+
 async def fetch_exchange_rate(session, date):
     url = f'https://api.privatbank.ua/p24api/exchange_rates?json&date={date}'
     async with session.get(url) as response:
