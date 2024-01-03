@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block title %}Add Author{% endblock %}
+
+{% block content %}
+    <h2>Add Author</h2>
+    <form method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <br>
+        <label for="birthdate">Birthdate:</label>
+        <input type="date" id="birthdate" name="birthdate">
+        <br>
+        <label for="biography">Biography:</label>
+        <textarea id="biography" name="biography" rows="4" cols="50"></textarea>
+        <br>
+        <input type="submit" value="Add Author">
+    </form>
+{% endblock %}
